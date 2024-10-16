@@ -76,8 +76,8 @@ chat = Chatbot(
     config = APP_CONFIG
 )
 
-query = "Hi! I'm Bob."
-chat.response(query)
-
-query = "What is my name?"
-chat.response(query)
+while True:
+    query = input("User query:")
+    if query == 'quit':
+        break
+    chat.response(query)
